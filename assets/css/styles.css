@@ -2,3 +2,13 @@ nav.navbar.bootsnav {
     background-color: #000;
     border-bottom: transparent;
 }
+.footer-top {
+    padding: 112px 0 72px;
+    margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+    .footer-top {
+        padding: 20px 0 72px;
+        margin-top: 0px;
+    }
+}
