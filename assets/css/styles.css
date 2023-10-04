@@ -1,14 +1,114 @@
+
 nav.navbar.bootsnav {
     background-color: #000;
     border-bottom: transparent;
 }
 .footer-top {
-    padding: 112px 0 72px;
-    margin-top: 60px;
+    padding: 40px 0 20px;
+    margin-top: 30px;
 }
 @media screen and (max-width: 767px) {
     .footer-top {
         padding: 20px 0 72px;
         margin-top: 0px;
     }
+}
+.footer {
+    background: #fff;
+    height: 100vh;
+    padding-top: 90px;
+}
+.contact .contact-title {
+    font-size: 45px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+}
+.contact .contact-title::before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #4e4ffa;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact .items {
+    display: flex;
+    align-items: center;
+}
+.contact .contact-input {
+    max-width: 420px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.contact .contact-input .form-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.contact .input-box {
+    width: 100%;
+    background: #ddd;
+    padding: 10px 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    
+}
+.contact .input-box input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #000;
+
+}
+.contact .input-box span i {
+    font-size: 20px;
+}
+#txt {
+    background: #ddd;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    margin-inline: auto;
+    resize: none;
+    color: #333;
+}
+
+.img-box img {
+    width: 100%;
+}
+.contact .main-btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    background: #4e4ffa;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+.footer-bottom {
+    background: #4e4ffa;
+    padding: 40px 80px;
+}
+.footer-bottom ul li a {
+    color: #fff;
+
+}
+.footer-bottom .foot-email-box input{
+    background: #fff;
+    color: #000;
 }
