@@ -106,6 +106,7 @@ html,body{height: 100%;}
     position: relative;
     font-size: 36px;
     font-weight: 500;
+    margin-top: 100px;
     padding-bottom: 35px;
 }
 .section-header h2:before {
@@ -330,7 +331,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 /*-------------------------------------
         5. Service 
 --------------------------------------*/
-.service { padding: 260px 0 87px;}
+.service {
+    padding: 110px 0 87px;
+}
 
 .single-service-item{
     text-align: center;
@@ -364,6 +367,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     bottom: 0;
     left: 50%;
     margin-left: -10px;
+}
+.service-content {
+    margin-top: 60px;
 }
 
 .single-service-icon [class^="flaticon-"]:before,.single-service-icon[class*=" flaticon-"]:before,.single-service-icon [class^="flaticon-"]:after,.single-service-icon [class*=" flaticon-"]:after {font-size:60px;}
@@ -525,10 +531,29 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
         9. Brand
 --------------------------------------*/
 .brand{
-    padding: 120px 0;
+    padding: 80px 0;
 }
 .brand-area {
     position:relative;
+}
+.brand-area h2 {
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 48px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.brand-area h2:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -42px;
+    background: #4e4ffa;
 }
 .brand-area .item {
     padding: 0 40px 0;
@@ -604,7 +629,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 }
 .single-footer-widget ul li a span {text-transform: lowercase;}
 .footer-newsletter p{
-    color: #aeafc2;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 300;
     margin: 0 0 15px;
@@ -644,10 +669,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 /*.footer-copyright */
 .footer-copyright {
     padding: 20px 0 17px;
-    border-top: 1px solid #434859;
+    border-top: 1px solid #ffffff;
 }
-.footer-copyright p,.footer-copyright p a {
-    color: #a8a9bf;
+.footer-copyright p,.footer-copyright p a i {
+    color: #ffffff;
     font-size: 14px;
     font-weight: 400;
     text-transform: capitalize;

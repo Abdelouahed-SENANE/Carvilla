@@ -1,4 +1,3 @@
-
 nav.navbar.bootsnav {
     background-color: #000;
     border-bottom: transparent;
@@ -25,10 +24,9 @@ nav.navbar.bootsnav {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-
 }
 .contact .contact-title::before {
-    content: '';
+    content: "";
     width: 60px;
     height: 3px;
     background-color: #4e4ffa;
@@ -42,9 +40,14 @@ nav.navbar.bootsnav {
     align-items: center;
 }
 .contact .contact-input {
-    max-width: 420px;
+    max-width: 480px;
     margin-top: 40px;
     margin-left: 30px;
+}
+@media (max-width: 767) {
+    .contact .contact-input {
+        width: 100%;
+    }
 }
 .contact .contact-input .form-title {
     font-weight: bold;
@@ -59,8 +62,6 @@ nav.navbar.bootsnav {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    
-    
 }
 .contact .input-box input {
     width: 100%;
@@ -69,7 +70,6 @@ nav.navbar.bootsnav {
     border: 0;
     outline: 0;
     color: #000;
-
 }
 .contact .input-box span i {
     font-size: 20px;
@@ -92,13 +92,12 @@ nav.navbar.bootsnav {
 .contact .main-btn {
     display: block;
     width: 100%;
-    height: 50px;
+    height: 60px;
     margin: 20px auto;
     background: #4e4ffa;
     color: #fff;
-    border-radius: 30px;
+    border-radius: 5px;
     cursor: pointer;
-
 }
 .footer-bottom {
     background: #4e4ffa;
@@ -106,9 +105,65 @@ nav.navbar.bootsnav {
 }
 .footer-bottom ul li a {
     color: #fff;
-
 }
-.footer-bottom .foot-email-box input{
+.footer-bottom .foot-email-box input {
     background: #fff;
     color: #000;
 }
+section.pricing {
+    top: 114px;
+}
+.section-back {
+    background-image: url(../images/section-pricing/road-background.jpg);
+    background-position-y: 550px;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.section-back::before {
+    content: "";
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.section-back .section-title {
+    position: relative;
+    z-index: 1;
+}
+.section-back .section-title h1 {
+    font-size: 70px;
+    color: #fff;
+    letter-spacing: 6px;
+    margin-top: 30px;
+    
+}
+
+.pricing .price-content {
+    padding-block: 112px;
+}
+.container .header-txt h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 55px;
+    color: #000;
+    position: relative;
+
+}
+.container .header-txt h2::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4e4ffa;
+    width: 80px;
+    height: 3px;
+}
+
