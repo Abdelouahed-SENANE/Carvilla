@@ -122,14 +122,15 @@ section.pricing {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .section-back::before {
     content: "";
-    height: 550px;
+    height: 100%;
     width: 100%;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
 }
@@ -166,6 +167,106 @@ section.pricing {
     width: 80px;
     height: 3px;
 }
+/* Section Pricing */
 
 
+.price-content .content .cards  {
+    display: grid;
+    grid-template-columns:  repeat(3 ,auto);
+    gap: 30px;
+}
+@media (max-width : 767px) {
+    .price-content .content .cards  {
 
+        grid-template-columns: 1fr;
+    }
+}
+.price-content .content .cards .card {
+    padding: 40px 60px;
+}
+.card {
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.card::hover {
+    margin-top: -100px;
+}
+.card .basic {
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 30px;
+}
+.card .basic h1 {
+    font-size: 45px;
+    margin-block: 5px;
+}
+.card .basic span {
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 2px;
+}
+.offre-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.card li {
+    color: #9b9b9b;
+    margin-block: 10px;
+    
+}
+.card li i {
+    margin-right: 15px;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+.card li.active {
+    color: #000;
+}
+.card ul li.active i {
+    color: #4e4ffa;
+    margin-right: 15px;
+    font-size: 16px;
+}
+.card .btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding:0;
+}
+.card .btn a {
+    width: 100%;
+    padding-block: 20px;
+    background: #f7f7f7;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    color: #333;
+    transition: 0.5s ease;
+    z-index: 1;
+    
+}
+.card .btn a::before {
+    content: '';
+    background: #4e4ffa;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s ease;
+    
+}
+.card .btn a:hover {
+    color: #fff;
+}
+
+.card .btn a:hover::before {
+    width: 100%;
+}
